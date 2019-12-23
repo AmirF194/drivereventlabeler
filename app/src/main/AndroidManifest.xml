@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sharif.armin.drivingeventlabeler">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.BiasEstimation"
+            android:label="@string/title_activity_bias_estimation"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".activity.Visualization"
+            android:label="@string/title_activity_visualization"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.GuidedLabeling"
+            android:label="@string/title_activity_guided_labling"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.ManualLabeling"
+            android:label="@string/title_activity_manual_labling"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

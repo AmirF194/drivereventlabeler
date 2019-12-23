@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.GuidedLabeling"
+    tools:showIn="@layout/activity_guided_labeling"
+    android:paddingRight="8dp"
+    android:paddingLeft="8dp"
+    >
+
+    <Button
+        android:id="@+id/Brake_buttom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_shape"
+        android:onClick="brake"
+        android:text="@string/brake"
+        app:layout_constraintBottom_toTopOf="@+id/Turn_buttom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textlabel" />
+
+    <Button
+        android:id="@+id/Turn_buttom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="turn"
+        android:text="@string/turn"
+        android:background="@drawable/button_shape"
+        app:layout_constraintBottom_toTopOf="@+id/LaneChange_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Brake_buttom" />
+
+    <Button
+        android:id="@+id/LaneChange_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="laneChange"
+        android:text="@string/lane_change"
+        android:background="@drawable/button_shape"
+        app:layout_constraintBottom_toTopOf="@+id/textTimer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Turn_buttom" />
+
+    <TextView
+        android:id="@+id/textlabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/Brake_buttom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textTimer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Time"
+        android:textSize="50dp"
+        style="bold"
+        android:gravity="center"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/stop_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LaneChange_button" />
+
+    <Button
+        android:id="@+id/stop_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_shape_red"
+        android:onClick="stop"
+        android:text="@string/stop"
+        android:layout_marginBottom="18dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>

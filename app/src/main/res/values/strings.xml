@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">DrivingEventLabeler</string>
+    <string name="title_activity_manual_labling">ManualLabling</string>
+    <string name="freq_hint">Enter a frequency</string>
+    <string name="default_frequency">100</string>
+    <string name="GPS_default_frequency">1000</string>
+    <string name="sensors">Sensors (Hz)</string>
+    <string name="gps">GPS (msec)</string>
+    <string name='stop'>Stop Recording</string>
+
+    <string name="accelerate">گاز</string>
+    <string name="brake">ترمز</string>
+    <string name="lane_change">تغییر باند</string>
+    <string name="turn_right">گردش به راست</string>
+    <string name="turn_left">گردش به چپ</string>
+    <string name="turn">گردش</string>
+    <string name="u_turn">گردش U شکل</string>
+    <string name="bump">دست انداز</string>
+    <string name="ramp">رمپ</string>
+    <string name="aggresive">رانندگی خطرناک</string>
+    <string name="title_activity_guided_labling">GuidedLabling</string>
+    <string name="title_activity_visualization">Visualization</string>
+    <string name="title_activity_bias_estimation">bias_estimation</string>
+
+    <string name="text_activity_bias_estimation">
+        Please put your phone on a flat area like table then touch the start
+        button.
+    </string>
+    <string name="start_button_activity_bias_estimation">Start</string>
+
+
+    <string name="Visualization">Visualization</string>
+    <string name="BiasEstimation">BiasEstimation</string>
+    <string name="ManualLabeling">ManualLabeling</string>
+    <string name="GuidedLabeling">GuidedLabeling</string>
+
+
+
+</resources>
